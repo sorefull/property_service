@@ -1,7 +1,11 @@
-# README
+# SERVICE microservice
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an implementation of a code challenge for XXXX company.
+
+Setup:
+
+- Modify `service/config/database.yml` to connect it to your local postgresql instance if needed
+- Upload sql dump with `pg_dump service_development < db/data/properties.sql`
 
 Things you may want to cover:
 
