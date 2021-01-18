@@ -15,4 +15,19 @@ ActiveRecord::Schema.define(version: 0) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "properties", id: :serial, force: :cascade do |t|
+    t.string "offer_type"
+    t.string "property_type"
+    t.string "zip_code", null: false
+    t.string "city", null: false
+    t.string "street"
+    t.string "house_number"
+    t.decimal "lng", precision: 11, scale: 8
+    t.decimal "lat", precision: 11, scale: 8
+    t.integer "construction_year"
+    t.decimal "number_of_rooms", precision: 15, scale: 2
+    t.string "currency"
+    t.decimal "price", precision: 15, scale: 2
+  end
+
 end

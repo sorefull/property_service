@@ -2,10 +2,12 @@
 
 This is an implementation of a code challenge for XXXX company.
 
-Setup:
+### Setup:
 
 - Modify `service/config/database.yml` to connect it to your local postgresql instance if needed
-- Upload sql dump with `pg_dump service_development < db/data/properties.sql`
+- Upload postgresql dump into your database `rails db < db/data/properties.sql`
+
+### Usage
 
 Things you may want to cover:
 
