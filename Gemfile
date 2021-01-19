@@ -6,7 +6,7 @@ ruby '2.6.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.1'
 # Use pg
-gem 'pg'
+gem 'pg', '~> 1.2'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -26,14 +26,14 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # gem 'rack-cors'
 
 # Use mutations to compose buisines logic into commands
-gem 'mutations'
+gem 'mutations', '~> 0.9'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Use rspec testing library
   gem 'rspec-rails', '~> 4.0.2'
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '~> 6.1'
 end
 
 group :development do
