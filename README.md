@@ -5,6 +5,7 @@ This is an implementation of a code challenge.
 ### Setup:
 
 - Modify `service/config/database.yml` to connect it to your local postgresql instance if needed
+- Bundle the dependencies by running `bundle install`
 - Upload postgresql dump into your database `rails db < db/data/properties.sql`
 
 ### Usage
@@ -36,11 +37,13 @@ curl -XGET 'http://127.0.0.1:3000/api/properties?properties%5Blat%5D=52.40631820
 curl -XGET 'http://127.0.0.1:3000/api/properties?properties%5Blat%5D=52.40631820'
 ```
 
-### Debug
+### Errors
 
 System also includes such error messages, response will have 422 status:
-- XXX is required - missing parameter XXX
-- XXX is too big/small - parameter XXX is outside of expected range
-- XXX isn't an option - parameter XXX has unexpected value
+- `XXX is required` - missing parameter XXX
+- `XXX is too big/small` - parameter XXX is outside of expected range
+- `XXX isn't an option` - parameter XXX has unexpected value
 
 ### Testing
+
+This project includes rspec. To run tests simply run `rspec` in your console
