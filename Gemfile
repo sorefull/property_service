@@ -25,9 +25,6 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
-# Use haml-rails for a template
-gem 'haml-rails'
-
 # Use mutations to compose buisines logic into commands
 gem 'mutations'
 

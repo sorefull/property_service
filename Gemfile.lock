@@ -67,24 +67,9 @@ GEM
     concurrent-ruby (1.1.7)
     crass (1.0.6)
     erubi (1.10.0)
-    erubis (2.7.0)
     ffi (1.14.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    haml (5.2.1)
-      temple (>= 0.8.0)
-      tilt
-    haml-rails (2.0.1)
-      actionpack (>= 5.1)
-      activesupport (>= 5.1)
-      haml (>= 4.0.6, < 6.0)
-      html2haml (>= 1.0.1)
-      railties (>= 5.1)
-    html2haml (2.2.0)
-      erubis (~> 2.7.0)
-      haml (>= 4.0, < 6)
-      nokogiri (>= 1.6.0)
-      ruby_parser (~> 3.5)
     i18n (1.8.7)
       concurrent-ruby (~> 1.0)
     listen (3.4.1)
@@ -146,9 +131,6 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    ruby_parser (3.15.1)
-      sexp_processor (~> 4.9)
-    sexp_processor (4.15.2)
     spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -157,9 +139,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    temple (0.8.2)
     thor (1.0.1)
-    tilt (2.0.10)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     websocket-driver (0.7.3)
@@ -173,7 +153,6 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
-  haml-rails
   listen (~> 3.3)
   mutations
   pg
