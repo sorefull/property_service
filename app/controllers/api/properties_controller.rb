@@ -15,7 +15,7 @@ module Api
     private
 
     def permitted_params
-      params.require(:properties).permit(:lat, :lng, :property_type, :offer_type)
+      params.permit(:lat, :lng, :property_type, :offer_type)
     end
   end
 end

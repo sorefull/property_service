@@ -19,28 +19,29 @@ Here are just some examples:
 
 ```
 <!-- Will return 1013 found properties in this area -->
-curl -XGET 'http://127.0.0.1:3000/api/properties?properties%5Blat%5D=52.5166023&properties%5Blng%5D=13.3041054'
+curl -XGET 'http://127.0.0.1:3000/api/properties?lat=52.5166023&lng=13.3041054'
 ```
 
 ```
 <!-- Will return 18 found properties in this area -->
-curl -XGET 'http://127.0.0.1:3000/api/properties?properties%5Blat%5D=52.5166023&properties%5Blng%5D=13.3041054&properties%5Bproperty_type%5D=apartment_roof_storey'
+curl -XGET 'http://127.0.0.1:3000/api/properties?lat=52.5166023&lng=13.3041054&property_type=apartment_roof_storey'
 ```
 
 ```
 <!-- Will return 13 found properties in this area -->
-curl -XGET 'http://127.0.0.1:3000/api/properties?properties%5Blat%5D=52.40631820&properties%5Blng%5D=13.54563200&properties%5Boffer_type%5D=rent'
+curl -XGET 'http://127.0.0.1:3000/api/properties?lat=52.40631820&lng=13.54563200&offer_type=rent'
 ```
 
 ```
 <!-- Will return the error message that Lng is required -->
-curl -XGET 'http://127.0.0.1:3000/api/properties?properties%5Blat%5D=52.40631820'
+curl -XGET 'http://127.0.0.1:3000/api/properties?lat=52.40631820'
 ```
 
 ### Errors
 
 System also includes such error messages, response will have 422 status:
 - `XXX is required` - missing parameter XXX
+- `XXX is invalid` - invalid XXX parameter
 - `XXX is too big/small` - parameter XXX is outside of expected range
 - `XXX isn't an option` - parameter XXX has unexpected value
 

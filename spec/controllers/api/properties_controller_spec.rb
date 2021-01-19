@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe Api::PropertiesController do
-  subject { get :index, params: { properties: { lat: 'lat', lng: 'lng'} } }
+  subject { get :index, params: { lat: 'lat', lng: 'lng'} }
 
   before do
     allow(Properties::Find).to receive(:run) { outcome }
